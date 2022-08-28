@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Conditional Rerendering">
+    <div>
+        <lightning-input type="checkbox"
+                  label="Show Details"
+                  onchange={handlechange}
+        ></lightning-input>
+
+        <div class="details">
+        <template if:true={areDetailsVisible}>
+            This is True Conditional Output
+        </template>
+
+        <template if:false={areDetailsVisible}>
+            This False Conditional Output
+        </template>
+        </div>
+    </div>
+    </lightning-card>
+</template>

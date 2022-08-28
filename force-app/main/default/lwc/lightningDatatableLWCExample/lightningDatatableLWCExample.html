@@ -1,0 +1,16 @@
+<template>
+    <div class="slds-box outerDesign">
+        <h1> Account Datatable</h1>
+        <lightning-button label="SHOW LESS" title="Non-primary action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+        <lightning-button label="SHOW MORE" title="Non-primary action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+    </div>
+    <div class="slds-box design">
+    <template if:true={accList}>
+        <lightning-datatable data={accList} columns={columns} key-field="Id">
+        </lightning-datatable>
+    </template>
+    <template if:true={error}>
+        {error}
+    </template>
+    </div>
+    </template> 
