@@ -9,7 +9,7 @@
 <aura:component >
     <aura:attribute name="WholeNumber" type="integer"/>
      <aura:attribute name="Percentage" type="integer"/>
-    
+    <aura:attribute name="DineshList" type="List"/>
     
     <div class="slds-var-p-around_small">
         <lightning:input type="number" name="input1" label="Enter a number" value="{!v.WholeNumber}"/>
